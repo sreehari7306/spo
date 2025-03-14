@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now Cover Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('image/coverpage.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+        .cover-container {
+           background-color: lightseagreen;
+            text-align: center;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+        }
+        .cover-container h1 {
+            color: black;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .cover-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .shop-now-btn {
+            background-color:blue;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+            text-transform: uppercase;
+        }
+        .shop-now-btn:hover {
+            background-color: green;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="cover-container">
+    <h1>Welcome to Our Store</h1>
+    <p>Discover amazing products at unbeatable prices!</p>
+    <a href="http://127.0.0.1:5500/project/templates/userlogin.html" class="shop-now-btn">order</a>
+</div>
+
+</body>
+</html>

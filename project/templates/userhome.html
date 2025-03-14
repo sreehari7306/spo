@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        .hero-section {
+            background-image: url('sports-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-section h1 {
+            background-color: #ffcc00;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 10px;
+            background-color: #fff;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-item h3 {
+            margin: 15px 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .product-item .price {
+            font-size: 20px;
+            color: #ff6600;
+            margin: 10px 0;
+        }
+
+        .product-item button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item button:hover {
+            background-color: #e65c00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        p{
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Shop</h1>
+    <p>Your one-stop shop for all sports equipment</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="http://127.0.0.1:5500/project/templates/home.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/project/templates/cart.html">Sale</a></li>
+        <li><a href="http://127.0.0.1:5500/project/templates/contact.html">Contact</a></li>
+        <li><a href="http://127.0.0.1:5500/project/templates/userlogin.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="hero-section">
+    <h1>Welcome to Our Sports Store!</h1>
+    <p>Get the best sports gear and accessories</p>
+</section>
+
+<section class="products">
+    <div class="product-item">
+        <img src="image/11.jpg" alt="Basketball">
+        <h3>Basketball</h3>
+        <p class="price">$29.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn btn-primary">Add  to Cart</a>
+    </div>
+
+
+    <div class="product-item">
+        <img src="image/10.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+
+    <div class="product-item">
+        <img src="image/12.jpg" alt="Tennis Racket">
+        <h3>Tennis Racket</h3>
+        <p class="price">$49.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/1.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/2.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/3.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/4.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/5.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/6.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/7.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/8.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+
+    <div class="product-item">
+        <img src="image/9.webp" alt="Soccer Ball">
+        <h3>Soccer Ball</h3>
+        <p class="price">$19.99</p>
+        <a href="http://127.0.0.1:5500/project/templates/cart.html" class="btn-primary">Add to Cart</a>
+    </div>
+    
+</section>
+
+<footer>
+    <p>&copy; 2025 Sports Shop | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
